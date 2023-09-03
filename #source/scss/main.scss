@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font: "Roboto Condensed", sans-serif 500; 
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: aqua;	
+}
+
+.text-content {
+	display: flex;		
+	padding: 15px;
+	border-radius: $border-radius-md;
+	margin: 15px;
+	gap: 15px;
+	background-color: $main-color;
+	font-size: 40px;	
+}
+
+.constant-text {
+	color: #fff;
+}
+
+.color-name {
+	color: blueviolet;
+}
+
+.button-change-color {
+	display: flex;
+	padding: 8px;
+	border: 2px solid $main-color;
+	border-radius: $border-radius-md;
+	margin: 0 auto;
+	background-color: transparent;
+	color: $main-color;		
+	font-size: 26px;	
+	cursor: pointer;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $main-color;
+		color: #fff;
+	}
+}
+
+.margin-bottom-0 { margin-bottom: 0 !important; }
